@@ -1,0 +1,3 @@
+cd ~/the_odin_project/roam_scripts/
+python gen_weekly.py
+code $(ls -Art | tail -n 1)

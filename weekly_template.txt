@@ -1,0 +1,22 @@
+  - [[Morning Questions]]
+      - How many hours of sleep did I get? {{[[slider]]}} 
+      - What's one thing top of mind today?
+      - What's the one thing I need to get done today to make progress?
+  - #Tasks
+      - Review [[@inbox]] [[@next]] [[@waiting]]
+      - Check calendar for scheduled events
+      - Take supplements (creatine, B12, Vitamin D)
+  - Daily Template:
+      - Tasks:
+          - Previously scheduled:
+              - {{query: {and: [[TODO]] [[@scheduled]] {between: [[today]] [[today]] }}}}
+      - Meetings/Events:
+          - 
+      - Misc notes:
+          - 
+  - [[Evening Questions]]
+      - List three things I'm grateful for #habit #gratitude
+      - What made me happy today?
+      - What made me sad?
+      - What prevented me from reaching my goals today?
+      - What am I looking forward to?
