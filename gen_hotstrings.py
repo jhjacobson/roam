@@ -1,5 +1,5 @@
 def write_script():
-    script_f = open("ahk_roam_hotstrings.txt","w")
+    script_f = open("ahk_roam_hotstrings.ahk","w")
     script_f.write(gen_all_functions())
     script_f.close()
 
