@@ -20,7 +20,3 @@
       - What made me sad?
       - What prevented me from reaching my goals today?
       - What am I looking forward to?
-  - #[[Daily Notes Retro]]
-      - Yesterday: [[{yesterday}]] - are all tasks completed or rescheduled?
-      - 1 week: [[{one_week}]]
-      - 1 month: [[{one_month}]]

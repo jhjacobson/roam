@@ -1,4 +1,0 @@
-  - #[[Daily Notes Retro]]
-      - Yesterday: [[{yesterday}]] - are all tasks completed or rescheduled?
-      - 1 week: [[{one_week}]]
-      - 1 month: [[{one_month}]]
