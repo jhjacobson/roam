@@ -18,7 +18,6 @@ formatRoamDate(DateTimeObj)
   return % Format("[[{} {}, {}]]", oMatch.1, appendOrdinal(oMatch.2), oMatch.3)
 }
 
-
 appendOrdinal(d)
 {
 	static SUFFIX := ["st", "nd", "rd"]
@@ -49,9 +48,19 @@ DateCalc(Days := 0,Months := 0,Years := 0)
         CalcYears := CalcMonths = 0 ? CalcYears-1 : CalcYears
         CalcMonths := CalcMonths + 12
     }
-    NewDate := Substr(Date,1,4)+CalcYears . Format("{:02}", CalcMonths) . Substr(Date,7,2)
+    NewDate := Substr(Date,1,4)+CalcYears . Format("{:02}", CalcMonths) . SubStr(Date,7,2)
     NewDate += Days , Days
+	If !NewDate ;used for the month add commands. Current month has more days then next month and on the last day of the month.
+	{
+		CalcDays := SubStr(Date,7,2) + Days
+		If (CalcMonths in 4,6,9,11) && (CalcDays > 30)
+		{   
+			NewDate := Substr(Date,1,4)+CalcYears . Format("{:02}", CalcMonths+1) . "01"
+		}
+		Else If (CalcMonths == 2) && (CalcDays > 28)
+		{
+			NewDate := Substr(Date,1,4)+CalcYears . "03" . "01"
+		}
+	}
     Return NewDate
 }
-
-Esc::ExitApp ;exit script with escape key

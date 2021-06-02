@@ -1,0 +1,24 @@
+time_units_forward: #how many time units forward to generate hotstrings for
+  week: 52
+  day: 31
+  year: 5
+  month: 31
+hotstrings_file_loc:
+  ../AutoHotkey/ahk_roam_hotstrings.ahk
+
+sched_prefix_cmd: |-2
+    Send ^{enter} {#}@scheduled
+    Sleep 10
+    Send, ^{Left}^{Left}{Left}
+    Sleep 30
+
+sched_suffix_cmd: |-2
+    Send, ^{Right}^{Right}^{Right}^{Right}^{Right}
+    Sleep 10
+    Send, {space}{Left}
+
+unit_abbreviation:
+  week: w
+  day: d
+  month: m
+  year: m

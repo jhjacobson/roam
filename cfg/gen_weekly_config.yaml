@@ -1,0 +1,8 @@
+DAYS_BACK_RETRO_REVIEW:
+  Yesterday: 1
+  One Week: 7
+  One Month: 30
+WEEKLY_TEMPLATE: weekly_template.txt
+OUTPUT_FOLDER: weeks/
+DAILY_TASKS: daily_tasks.txt
+TASK_LINE_TAG: '#@scheduled'
